@@ -273,7 +273,6 @@ export default function MacroDashboard() {
   const toggle = (key) => setOpenItem(prev => prev === key ? null : key);
   const handleWeekChange = (idx) => { setSelectedWeekIdx(idx); setActiveMarket(0); setOpenItem(null); };
 
-  const px = isMobile ? "14px" : "24px";
   const sectionMb = isMobile ? 20 : 28;
 
   return (
