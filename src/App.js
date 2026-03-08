@@ -214,7 +214,7 @@ const Ticker = () => {
   const items = ["XAUUSD  $5,170.90  ▼1.9% WK","XAGUSD  $84.31  ▼9.4% WK","NAS100  $24,631.65  ▼1.59% WK","BTCUSD  $68,258.48  ▼37% FR ATH","USOIL  $91.01  ▲GEO PREMIUM","FED RATE  3.50–3.75%  ON HOLD","FEB NFP  −92K  vs +59K EXPECTED","FEB CPI DUE  WED MAR 11  FORECAST +2.9%","FOMC BLACKOUT BEGINS THIS WEEK"];
   const doubled = [...items, ...items];
   return (
-    <div style={{ background: "#fff", borderBottom: "1px solid #e5e7eb", overflow: "hidden", height: 36, display: "flex", alignItems: "center" }}>
+    <div style={{ background: "#fff", borderBottom: "1px solid #e5e7eb", overflow: "hidden", height: 36, display: "flex", alignItems: "center", position: "sticky", top: 0, zIndex: 100 }}>
       <div style={{ background: "#111827", color: "#fff", fontFamily: "'Inter',sans-serif", fontSize: 11, fontWeight: 600, padding: "0 14px", height: "100%", display: "flex", alignItems: "center", whiteSpace: "nowrap", flexShrink: 0, gap: 7, letterSpacing: "0.03em" }}>
         <span className="red-blink" style={{ width: 7, height: 7, borderRadius: "50%", background: "#ef4444", display: "inline-block" }} />
         MARKET CLOSED
