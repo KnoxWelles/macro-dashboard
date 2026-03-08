@@ -540,3 +540,4 @@ export default function EliteMacros() {
     </div>
   );
 }
+export default EliteMacros;
